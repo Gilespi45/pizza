@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav>
         <ul>
           <li>
-            <Link  to="/add_pizza" style={{textDecoration:"none"}}>add Pizza</Link>
+            <Link  to="/add_pizza" style={{textDecoration:"none"}}>Add Pizza</Link>
           </li>
           <li>
             <Link to="/order" style={{textDecoration:"none"}}>Order</Link>

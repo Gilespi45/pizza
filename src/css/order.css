@@ -4,12 +4,12 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-h1{
+.orderHeading{
     color: blueviolet;
     text-align: center;
 }
-h3{
-    color: rgb(94, 85, 85);
+.orderTable{
+    color: rgb(211, 32, 172);
     margin-bottom: 10px;
 }
 img{
@@ -17,12 +17,13 @@ img{
     height: 230px;
 }
 
-p{
+.orderPrice{
     color: rgb(35, 216, 35);
     font-weight: bold;
     margin-bottom: 10px;
 }
-button[type="submit"]{
+#oderBuyNow,
+.orderBtn{
     background-color: blueviolet;
     color: white;
     font-weight: bold;
@@ -31,20 +32,52 @@ button[type="submit"]{
     border: none;
 
 }
-button[type="submit"]:hover{
-    background-color: lightgreen;
+#oderBuyNow:hover,
+.orderBtn:hover{
+    background-color: rgb(20, 228, 20);
 }
-.cards {
+#orderDelete{
+    margin-top: 20px;
+}
+#orderDelete:hover{
+    background-color: red;
+}
+.orderCards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
   }
   
-  .card {
+  .orderCard {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 4px;
     padding: 20px;
+  }
+  .orders{
+    margin: auto;
+  }
+  .orderPizza{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; 
+  }
+  .orders th {
+    color: rgb(21, 112, 230);
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000;
+  }
+  
+  .orders td {
+    color: rgb(148, 93, 250);
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+    font-weight: bold;
   }
   
   

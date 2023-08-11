@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../css/pizza.css';
 
 const Pizza = () => {
   const [name, setName] = useState('');
@@ -51,22 +52,22 @@ const Pizza = () => {
   };
 
   return (
-    <div className="add-pro-container">
-      <h1>Add Pizza</h1>
+    <div className="add-pizza">
+      <h1 className='pizzaHeading'>Add Pizza</h1>
       <form onSubmit={Submit}>
-        <label>
+        <label className='pizaaLabel'>
           Name:
-          <input type="text" value={name} onChange={NameChange} />
+          <input className='pizaaInput' type="text" value={name} onChange={NameChange} />
         </label>
         <br /><br/>
-        <label>
+        <label className='pizaaLabel'>
           Price:
-          <input type="number" value={price} onChange={PriceChange} />
+          <input className='pizaaInput' type="number" value={price} onChange={PriceChange} />
         </label>
         <br /><br/>
-        <label>
-          Photo:        <br /><br/>
-          <input type="file" accept="image/*" onChange={ImageChange} />
+        <label  className='pizaaLabel'>
+          Photo:  
+          <input className='pizaaInput' type="file" accept="image/*" onChange={ImageChange} />
         </label>
         <br />        
        
